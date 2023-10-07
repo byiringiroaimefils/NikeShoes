@@ -1,42 +1,195 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Home-Photo img {
+  width: 350px;
+  border-radius: 45%;
+  position: relative;
+  animation: imgg 2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes imgg {
+  0% {
+    transform: translateY(0px);
+
+  }
+
+  50% {
+    transform: translateY(-22px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+.Home-Photo img::before {
+  position: absolute;
+  content: '';
+  width: 250px;
+  height: 5px;
+  background-color: #004ca0;
+}
+
+.Home-Descrption-words {
+  font-size: 25px;
+}
+
+.Home-Descrption-words h4 span {
+  font-size: 2.2rem;
+  color: #004ca0;
+}
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+
+/* Footer */
+
+.contact img {
+  width: 17px;
+  transform: translate(-7px, 20px);
+
+}
+
+.Footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  padding: 40px;
+  background-color: rgb(32, 32, 32);
+}
+
+.weekly label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Footer h3 {
+  position: relative;
+  font-size: 16px;
+}
+
+.Footer h3::before {
+  width: 55px;
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  top: 25px;
+
+}
+
+.Small-footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(49, 48, 48);
+}
+
+.SUB button {
+  background-color: #004ca0;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.SUB button:hover {
+  transform: translateX(5px);
+}
+
+.SUB input {
+  outline: none;
+  padding: 5px;
+}
+
+.location img {
+  width: 15px;
+  margin: 5px;
+}
+
+.SUB img {
+  width: 10px;
+  transform: translate(2px, 8px);
+  float: right;
+}
+
+/* Tailwind */
+
+
+.user img{
+  transform: translateY(-10px);
+}
+.shadowe {
+  box-shadow: 50px #ccc;
+  font-size: 20px;
+  background-color: #004ba0d2;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.shadow {
+  border-radius: 10px;
+  border: 2px solid #004ba096;
+}
+
+
+.Nike h2 {
+  font-size: 25px;
+  margin: 15px;
+  /* text-align: center; */
+
+}
+.Nike h2 span{
+  color: #004ca0;
+  font-weight: bold;
+}
+label{
+  /* text-align: center; */
+  margin-left: 15px;
+}
+
+.bg-slate-200{
+  box-shadow: 0 0 2px 0 #ccc;
+} 
+.Nike .p{
+  font-size: 20px;
+  margin: 30px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+
+/* About */
+.About .text-center{
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  color: #004ca0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.typo label{
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.leftabout p{
+  font-size: 15px;
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.leftabout h4{
+  font-size: 29px;
 }
